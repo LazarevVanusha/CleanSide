@@ -331,7 +331,7 @@ p.info__cleaner__description-text {
 
 
 .equipment {
-    max-width: 1920px;
+    max-width: 100%;
     height: 897px;
     background: url(./assets/images/equipment_back.png) no-repeat center center;
 }
@@ -339,7 +339,7 @@ p.info__cleaner__description-text {
 .equipment__wraper {
     padding-left: 173px;
     padding-top: 65px;
-    max-width: 1920px;
+    max-width: 95%;
 
 
 }
@@ -461,4 +461,110 @@ p.info__cleaner__description-text {
 
     color: #000000;
 
+}
+
+@media (max-width:1512px) {
+    .info {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    .info__left{
+       justify-content: center
+    }
+    .info__footage{
+        display: flex;
+        flex-direction: column;
+    }
+    .info__footage button {
+        padding: 18px;
+        position: relative;
+        left: 70%;
+        margin-bottom: 20px;
+        background: transparent;
+        font-size: 25px;
+        font-family: 'Montserrat';
+        letter-spacing: 0.05em;
+        border-bottom: 2px solid #0091E9;
+        color: #0091E9;
+
+    }
+    .info__cleaner {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .info__cleaner__img {
+        width: 120px;
+
+    }
+    .info__cleaner__description-img{
+        position: relative;
+        left: 80%;
+        bottom: 40%;
+    }
+    p.info__cleaner__description-text{
+        padding: 0;
+    }
+}
+@media (max-width:1512px) {
+    .equipment__container__box__vacuum {
+        width: 100%;
+        padding-left: 16px;
+        display: flex;
+        flex-direction:row;
+        gap: 27px;
+        overflow:scroll;
+    }
+    
+.equipment__container__box__vacuum__item {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0 29px 0;
+    width: 351px;
+    height: 431px;
+
+}
+
+.equipment__container__box__vacuum__item-titile {
+    padding-left: 18px;
+    /* position: absolute; */
+    position: relative;
+    top: 40px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.equipment__container__box__vacuum__item-description {
+    padding-top: 7px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.equipment__container__box__vacuum__item-description p {
+    padding-top: 70px;
+    padding-left: 20px;
+    height: 266px;
+    background: rgba(255, 255, 255, 0.72);
+    border: 2px solid #0091E9;
+    border-radius: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 140%;
+    /* or 35px */
+
+    letter-spacing: 0.05em;
+    color: #000000;
+
+}
 }

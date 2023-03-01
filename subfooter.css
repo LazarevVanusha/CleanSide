@@ -144,3 +144,20 @@
 .subfooter__faq__group-price img{
     margin-right: 320px;
 }
+@media (max-width:1512px) {
+    .subfooter {
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .subfooter__faq{
+        width: 100%;
+        background-size:cover;
+    }
+    .subfooter__form{
+        width: 100%;
+    }
+    .subfooter__form__container{
+        align-items: center;
+    }
+}

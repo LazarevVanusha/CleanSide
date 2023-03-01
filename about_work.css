@@ -32,7 +32,7 @@
 
 } 
 .aboute_work {
-    max-width: 1920px;
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -46,38 +46,58 @@
 .aboute__img {
     width: 437px;
     height: 413px;
+    padding-bottom: 47px;
 }
-
+.aboute__work__equip__header .aboute__img{
+    padding: 0;
+}
 .aboute_work_complex {
     display: flex;
     flex-direction: column;
-    width: 554px;
+    width: 28vw;
+    overflow: hidden;
+
 }
 
 .aboute_work_manager {
     display: flex;
     flex-direction: column;
-    max-width: 554px;
+    max-width: 28vw;
+    overflow: hidden;
+
 
 }
 
 .aboute_work_equip {
     display: flex;
     flex-direction: column;
-    max-width: 557px;
-
+    max-width: 28vw;
+    overflow: hidden;
+    align-items: center;
 }
 
 .aboute_work_complex__header {
-    padding-left: 95px;
+    /* padding-left: 95px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .aboute__work__manager__header {
-    padding-left: 112px;
+    /* padding-left: 112px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .aboute__work__equip__header {
-    padding-left: 114px;
+    /* padding-left: 114px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .aboute__work_title {
@@ -88,25 +108,27 @@
     line-height: 140%;
     letter-spacing: 0.05em;
     color: #0091E9;
+    width: 100%;    
+    padding-left: 60px;
+    margin-bottom: 40px;
+
 }
 
 .aboute__work_title.general {
-    margin-bottom: 40px;
 }
 
 .aboute__work_title.manager {
-    margin-bottom: 40px;
 }
 
 .aboute__work_title.equip {
-    /* margin-bottom: 40px; */
+    margin-bottom: 0px;
 }
 
 
 .border {
     margin-left: 45px;
     margin-bottom: 24px;
-    width: 488px;
+    width: 100%;
     border: 2px solid #0091E9;
 }
 
@@ -131,4 +153,28 @@
 
 .aboute_work__description {
     padding-left: 37px;
+}
+
+@media (max-width:1730px) {
+    .aboute__img {
+        padding-bottom: 0px;
+    }
+    .aboute__work_title.equip {
+        padding-left: 10px;
+        /* width: 100%; */
+    }
+}
+@media (max-width:1512px) {
+    .aboute__img {
+      
+        padding-bottom: 0px;
+    }
+    .aboute__work_title.equip {
+        padding-left: 10px;
+        width: 100%;
+    }
+    .aboute__work_title.general{
+        padding-left: 50px;
+
+    }
 }

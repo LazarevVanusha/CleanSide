@@ -4,7 +4,7 @@
     letter-spacing: 0.05em;
     font-weight: 400;
     text-align: center;
-    color: #004E77;;
+    color: #004E77;
 }
 .road{
     position: relative;
@@ -110,6 +110,80 @@
     gap: 0;
     /* content: url("./assets/images/road/order_4.png"); */
 }
+.road__curve__icon__order4__buble::before{
+    content: "";
+    position: absolute;
+    top: 340px;
+    left: 80px;
+    background: rgba(0, 145, 233, 0.19);;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    animation: buble 1.2s infinite;
+    /* opacity: 1; */
+}
+.road__curve__icon__order4__buble2::before{
+    content: "";
+    position: absolute;
+    top: 340px;
+    left: 80px;
+    background: rgba(0, 145, 233, 0.19);;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    animation: buble2 1.3s infinite;
+    /* opacity: 1; */
+}
+.road__curve__icon__order4__buble3::before{
+    content: "";
+    position: absolute;
+    top: 340px;
+    left: 80px;
+    background: rgba(0, 145, 233, 0.19);;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    animation: buble3 1.4s infinite;
+    /* opacity: 1; */
+}
+@keyframes buble {
+    from{
+        left: 50px;
+        /* transform: translateY(20px) ; */
+        opacity: 1;
+    }
+    to{
+        left: 10px;
+        transform: translateY(40px) ;
+        transform: translateX(15px) ;
+
+        opacity: 0;
+    }
+}
+@keyframes buble2 {
+    from{
+        left: 50px;
+        /* transform: translateY(20px) ; */
+        opacity: 1;
+    }
+    to{
+        left: 10px;
+        transform: translateY(40px) ;
+        opacity: 0;
+    }
+}
+@keyframes buble3 {
+    from{
+        left: 50px;
+        /* transform: translateY(20px) ; */
+        opacity: 1;
+    }
+    to{ 
+        left: 10px;
+        transform: translateY(20px) ;
+        opacity: 0;
+    }
+}
 .road__curve__icon__traffic{
     position: absolute;
     transform: translateX(61vw) translateY(-9vh);
@@ -119,40 +193,71 @@
     content: "";
     position: absolute;
     top: 28px;
-    left: 91.5px;
+    left: 91px;
     background: #eb1a2b;
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 50%;
-    animation: blink 1.5s infinite;
+    animation: blink 6s infinite;
     box-shadow: 0px 0px 18px 3px rgba(235,26,43,1);
+    border: black 1px solid;
+
 }
 .road__curve__icon__traffic__yellow::before{
     content: "";
     position: absolute;
     top:57.1px;
-    left: 91.5px;
-    background: #eb1a2b;
+    left: 91px;
+    background: #e4eb0c;
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 50%;
-    animation: blink 1.5s infinite;
-    /* box-shadow: 0px 0px 18px 3px rgba(235,26,43,1); */
+    animation: blinkYellow 6s infinite;
+    box-shadow: 0px 0px 18px 3px  rgba(228,235,12,1);
+    border: black 1px solid;
+
+}
+.road__curve__icon__traffic__green::before{
+    content: "";
+    position: absolute;
+    top:87px;
+    left: 91px;
+    background: #17d12d;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    animation: blinkGreen 6s infinite;
+    box-shadow: 0px 0px 18px 3px  rgba(23,209,45,1);
+    border: black 0.1px solid;
 }
 @keyframes blink {
-    0% {
-        opacity: 1;
-        transition: 1s;
-
-    }
-    50%{
-        opacity: 0;
-        transition: 1s;
-    }
-    100% {
-        opacity: 1;
-        transition: 1s;
-    }
+    0%{opacity: .1;}
+    20%{opacity: 1;}
+    40%{opacity: 1; }
+    60%{opacity: .1; }
+    80%{opacity: .1; ;}
+    100%{opacity: .1; }
+    
+}
+@keyframes blinkYellow {
+    0%{opacity: .1;}
+    20%{opacity: .1;}
+    40%{opacity: 1;}
+    50%{opacity: .1;}
+    60%{opacity: .1;}
+    80%{opacity: .1;}
+    100%{opacity: .1;}
+}
+@keyframes blinkGreen {
+    0%{opacity: .1;}
+    20%{opacity: .1;}
+    40%{opacity: .1;}
+    60%{opacity: 1;}
+    80%{opacity: 1;}
+    85%{opacity: .1;}
+    90%{opacity: 1;}
+    95%{opacity: .1;}
+    100%{opacity: 1;}
 }
 
 .road__curve__icon__personal{
@@ -176,10 +281,72 @@
     /* content: url("./assets/images/road/cash.png"); */
 } 
 
-@media (max-width:1200px){
-    /* .road__curve__icon__order{
-        width: 300px;
-    } */
-    .road__curve__icon__order p{
+@media (max-width:1512px){
+    .road__curve__icon__order__text__row__word{
+        font-size: 20px;
     }
+    .road__curve__icon img{
+        width: 250px;
+    }
+    .road__curve__icon__traffic img{
+        width: 120px;
+    }
+    .road__curve__icon__phone img{
+        width: 120px;
+    }
+    .road__curve__icon__order{
+        transform:  translateX(1vw) translateY(0vh);
+    }   
+    .road__curve__icon__order2{
+        transform:translateX(1vw) translateY(15vh);
+    }
+    .road__curve__icon__order3{
+         transform: translateX(25vw) translateY(55vh);
+    }
+    .road__curve__icon__order4{
+        transform: translateX(37vw) translateY(-7vh);
+    }
+    .road__curve__icon__order4__buble::before{
+        top: 220px;
+        left: 20px;
+    }
+    .road__curve__icon__order4__buble2::before{
+        top: 220px;
+        left: 20px;
+    }
+    .road__curve__icon__order4__buble3::before{
+        top: 220px;
+        left: 20px;
+    }
+    .road__curve__icon__traffic{
+        transform: translateX(65vw) translateY(3vh);
+    }
+    .road__curve__icon__traffic__red::before{
+      
+        top: 22px;
+        left: 77px;
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+    .road__curve__icon__traffic__yellow::before{
+        top:48px;
+        left: 77px;
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+    .road__curve__icon__traffic__green::before{
+        top:73px;
+        left: 77px;
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+    .road__curve__icon__personal{
+        transform: translateX(70vw) translateY(65vh);
+    }
+    .road__curve__icon__phone{
+        transform: translateX(85vw) translateY(20vh);
+    }
+    .road__curve__icon__cash{
+        transform: translateX(82vw) translateY(-42vh);
+    } 
 }

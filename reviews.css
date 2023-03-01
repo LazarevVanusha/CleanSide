@@ -1,8 +1,9 @@
 .badge {
-    transform: translate(90%, 5%);
+    transform: translate(50%, 5%);
     box-sizing: border-box;
     min-width: 300px;
     max-width: 760px;
+   max-height: 670px;
     height: 100vh;
     padding: 20px 20px 32px;
     margin-bottom: 50px;
@@ -21,6 +22,7 @@
     box-sizing: border-box;
     position: relative;
     -webkit-box-flex: 0;
+ 
     /* -webkit-flex: none; */
     /* flex: none; */
 }

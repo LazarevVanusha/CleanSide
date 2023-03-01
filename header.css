@@ -227,7 +227,7 @@
     font-size: 20px;
     letter-spacing: 1px;
 } */
-@media (max-width:1500px) {
+@media (max-width:1512px) {
     .dialog{
         display: none;
     }
@@ -241,4 +241,17 @@
     
     
     }
+    .container__form__buble{
+        position: absolute;
+        transform: translateX(40vw) translateY(25vh);
+      }
 }
+/* Настольные компьютеры и ноутбуки -----------
+@media only screen  and (min-width: 1224px) {
+
+    } */
+     
+    /* Большие экраны ----------- */
+    @media only screen  and (min-width: 1824px) {
+    /* стили */
+    }
