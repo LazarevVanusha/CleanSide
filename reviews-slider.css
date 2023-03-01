@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.slider__wrapper-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    color: #0091E9;
+    margin-bottom: 100px;
+    padding-top: 48px;
+}
+
+
+.slider-wrapper {
+    /* position: relative; */
+    max-width: 1920px;
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-slide {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform .5s ease-in-out;
+}
+
+.left-slide>div {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.left-slide h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: -30px;
+}
+
+.right-slide {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    transition: transform .5s ease-in-out;
+}
+
+.right-slide>div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+button {
+    background-color: #fff;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 15px;
+}
+
+button:hover {
+    color: #222;
+}
+
+button:focus {
+    outline: none;
+}
+
+.slider-container .action-buttons button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 100;
+}
+
+.slider-container .action-buttons .down-button {
+    transform: translateX(-100%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.slider-container .action-buttons .up-button {
+    transform: translateY(-100%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+
+
+
+/* общие настройки для всего контейнера */
+.sl-container {
+    /* рисуем границу */
+    /* border: 3px solid #BFE2FF; */
+    /* добавляем отступы */
+    /* margin: 5px auto; */
+    /* то, что не помещается в блок, — скрываем */
+    overflow: hidden;
+    /* используем относительное позиционирование */
+    position: relative;
+    /* устанавливаем высоту и ширину блока */
+    width: 100vw;
+    height: 717px;
+    /* ограничиваем всё размерами блока */
+    box-sizing: border-box;
+}
+
+/* настройки блоков с картинками */
+.sl-container .view {
+    /* включаем абслютное позиционирование */
+    position: absolute;
+    /* сдвигаем всё в левый верхний угол */
+    top: 0;
+    left: 0;
+    min-width: 35vw;
+
+    /* то, что не помещается в блоке — скрываем */
+    overflow: hidden;
+}
+
+/* настройки картинок в блоке .view */
+.sl-container .view img {
+    /* ширина картинок совпадает с шириной блока */
+    /* width: 800px; */
+    /* max-width: 80vw; */
+    height: 717px;
+    object-position: 0% ;
+    object-fit: cover;
+}
+.view-after img{
+    max-width: 100vw;
+    width: 60vw;
+}
+.view-before{
+    padding-left: 650px;
+}
+
+/* настройки картинки слева */
+.sl-container .view-after {
+    /* показываем только половину */
+    width: min(45vh, 45vw);
+    /* и виртуально кладём её выше, чем картинку справа */
+    z-index: 200;
+}
+
+/* настройки слайдера */
+.sl-container .dragme {
+    /* включаем абслютное позиционирование */
+    position: absolute;
+    /* ширина разделителя */
+    width: 3px;
+    /* на всю высоту блока */
+    height: 100%;
+    /* начинается сверху блока */
+    top: 0px;
+    /* делит картинки пополам, потому что общая ширина у них 90vh */
+    left: min(45vh, 60vw);
+    
+    /* цвет фона */
+    background-color: #BFE2FF;
+    /* меняем форму курсора */
+    cursor: pointer;
+    /* поднимаем слайдер выше картинок */
+    z-index: 300;
+}
+
+/* кругляш на слайдере */
+.sl-container .dr-circle {
+    /* включаем абсолютное позиционирование */
+    position: absolute;
+    /* высчитываем позицию сверху, чтобы поставить его посередине */
+    top: calc(50% - 20px);
+    /* сдвигаем влево, так как круг рисуется слева направо, а не из центра */
+    left: -15px;
+    /* превращаем фигуру в круг */
+    border-radius: 100%;
+    /* высота и ширина */
+    width: 40px;
+    height: 40px;
+    /* цвет фона */
+    background-color: #BFE2FF;
+    /* меняем форму курсора */
+    cursor: pointer;
+    /* делаем на той же виртуальной высоте, что и полоска слайдера */
+    z-index: 300;
+}
+.dragme{
+    /* left: 15%!important; */
+    /* left: 20vw!important; */
+    margin-right: 265px;
+    border: 9px solid #0091E9;
+}

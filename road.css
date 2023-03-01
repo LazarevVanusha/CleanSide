@@ -1,0 +1,185 @@
+.road h1{
+    font-family: 'Comfortaa';
+    font-size: 50px;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    text-align: center;
+    color: #004E77;;
+}
+.road{
+    position: relative;
+    overflow: hidden;
+}
+.road__curve{
+
+   padding: 5% 0;
+
+}
+.road__curve__background{
+    display: flex;
+    justify-content: center;
+}
+.road__curve__background__img{
+    height: 1000px;
+    max-width: 1345px;
+    width: 100vw;
+    background: url("./assets/images/road/road.png") center center no-repeat;
+    background-size:100% ;
+}   
+.road__curve__icon{
+    position: absolute;
+    /* flex-direction: row; */
+}
+.road__curve__icon__order{
+    display: flex;
+    flex-direction: column;
+    transform:  translateX(2vw) translateY(-9vh);
+    /* content: url("./assets/images/road/order.png"); */
+}   
+.road__curve__icon__order__text__row{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+}
+.road__curve__icon__order3 .road__curve__icon__order__text__row{
+    align-items: flex-end;
+
+}
+.road__curve__icon__personal .road__curve__icon__order__text__row{
+    justify-content: center;
+}
+.road__curve__icon__cash .road__curve__icon__order__text__row{
+    align-items: center;
+
+}
+
+.road__curve__icon__order__text__row__number{
+    display: flex;
+    align-items: center;
+}
+.road__curve__icon__order2 .road__curve__icon__order__text__row__number{
+    padding-bottom: 20px;
+}
+.road__curve__icon__phone .road__curve__icon__order__text__column{
+    display: flex;
+    align-items: center;
+}
+.road__curve__icon__order__text__row__number__p{
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-size: 50px ;
+    color:#0091E9 ;
+    border: 2px solid #0091E9;
+    border-radius: 30px;
+    width: 71px;
+    height: 71px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+}
+.road__curve__icon__order__text__row__word{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400; 
+    font-size: 25px; 
+     line-height: 140%;
+     letter-spacing: 0.05em;
+    color: #004E77;
+}
+
+.road__curve__icon__order2{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    transform:translateX(3.2vw) translateY(0);
+    /* content: url("./assets/images/road/order_2.png"); */
+}
+.road__curve__icon__order3{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+
+     transform: translateX(25vw) translateY(35vh);
+}
+.road__curve__icon__order4{
+    position: absolute;
+    transform: translateX(37vw) translateY(-27vh);
+    gap: 0;
+    /* content: url("./assets/images/road/order_4.png"); */
+}
+.road__curve__icon__traffic{
+    position: absolute;
+    transform: translateX(61vw) translateY(-9vh);
+    /* content: url("./assets/images/road/traffic.png"); */
+}
+.road__curve__icon__traffic__red::before{
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 91.5px;
+    background: #eb1a2b;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    animation: blink 1.5s infinite;
+    box-shadow: 0px 0px 18px 3px rgba(235,26,43,1);
+}
+.road__curve__icon__traffic__yellow::before{
+    content: "";
+    position: absolute;
+    top:57.1px;
+    left: 91.5px;
+    background: #eb1a2b;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    animation: blink 1.5s infinite;
+    /* box-shadow: 0px 0px 18px 3px rgba(235,26,43,1); */
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+        transition: 1s;
+
+    }
+    50%{
+        opacity: 0;
+        transition: 1s;
+    }
+    100% {
+        opacity: 1;
+        transition: 1s;
+    }
+}
+
+.road__curve__icon__personal{
+    position: absolute;
+    transform: translateX(56vw) translateY(35vh);
+
+    /* content: url("./assets/images/road/personal.png") */
+}
+.road__curve__icon__phone{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    transform: translateX(77vw) translateY(6vh);
+
+    /* content: url("./assets/images/road/phone.png"); */
+}
+.road__curve__icon__cash{
+    position: absolute;
+    transform: translateX(72.5vw) translateY(-51vh);
+
+    /* content: url("./assets/images/road/cash.png"); */
+} 
+
+@media (max-width:1200px){
+    /* .road__curve__icon__order{
+        width: 300px;
+    } */
+    .road__curve__icon__order p{
+    }
+}

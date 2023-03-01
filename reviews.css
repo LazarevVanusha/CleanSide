@@ -1,0 +1,48 @@
+.badge {
+    transform: translate(90%, 5%);
+    box-sizing: border-box;
+    min-width: 300px;
+    max-width: 760px;
+    height: 100vh;
+    padding: 20px 20px 32px;
+    margin-bottom: 50px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.mini-badge {
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    -webkit-box-flex: 0;
+    /* -webkit-flex: none; */
+    /* flex: none; */
+}
+
+.mini-badge__org-name {
+    display: block;
+    margin-right: 110px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 20px;
+    text-decoration: none;
+    margin-bottom: 12px;
+    line-height: 23px;
+}
+
+.mini-badge__rating-info {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin-bottom: 16px;
+}

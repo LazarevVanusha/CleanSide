@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="general_clean.css">
+    <link rel="stylesheet" href="road.css">
+    <link rel="stylesheet" href="swiper.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="additionally.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="reviews.css">
+    <link rel="stylesheet" href="subfooter.css">
+    <link rel="stylesheet" href="about_work.css">
+    <link rel="stylesheet" href="reviews-slider.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./js/draggable-jquery-ui-min.js"> </script> 
+</head>
+
+<body>
+    <!-- <nav class="nav">
+        <div class="container">
+            <h1 class="logo"><a href="index.html">CleanSide</a></h1>
+            <ul>
+                <li><a href="#" class="active">Главная</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+
+    </nav> -->
+    <div class="banner">
+        <div class="container">
+            <div class="container__form">
+                <h1>ГЕНЕРАЛЬНАЯ УБОРКА</h1>
+                <div class="form">
+                    <div class="form__footage">
+                        <p class="form__text">Выберите метраж помещения</p>
+                        <div class="form__footage__btn">
+                        <button class="btnChoiseFootageStyle">25м<sup><small>2</small></sup></button>
+                        <button class="btnChoiseFootageStyle">35м<sup><small>2</small></sup></button>
+                        <button class="btnChoiseFootageStyle">50м<sup><small>2</small></sup></button>
+                        <button class="btnChoiseFootageStyle">80м<sup><small>2</small></sup></button>
+                        </div>
+                    </div>
+                    <div class="form__input">
+                        <input class="form__input__entry" value="0">
+                        <p>м<sup><small>2</small></sup></p>
+                    </div>
+                </div>
+                <div class="form__number">
+                    <p class="form__text">Номер телефона</p>
+                    <input class="form__number__entry" id="phone"  placeholder="+7(">
+                </div>
+                <button class=" buttonGeneralCleaning">Заказать</button>
+            <!-- <h1>Генеральная уборка</h1> --> 
+            <!-- <p>Lorem ipsum dolor sit amet consectetur.</p> -->
+                <div class="container__form__buble">
+                 <img src="./assets/images/buble.png">
+                </div>
+            </div>
+            <div class="dialog">
+                <p class="dialog__text">При заказе генеральной уборки вы получаете скидку 10% на мытье окон или на химчистку!</p>
+                <img src="./assets/images/Group 22.png">
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-- <img class="banner" src="./assets/images/subheader.png" alt="background"> -->
+    </div>
+    <div class="buttonsTop">
+        <div>
+            <button  class="buttonTop" id="buttonFirst">Перечень услуг</button>
+        </div>
+        <div>
+            <button  class="buttonTop" id="buttonSecond">Стоимость</button>
+        </div>
+        <div>
+            <button  class="buttonTop" id="buttonThirst">Отзывы</button>
+        </div>
+     </div>
+
+
+
+
+
+    <div class="aboute_work">
+        <div class="aboute_work_complex">
+            <div class="aboute_work_complex__header">
+                <img class="aboute__img generl-clean" src="./assets/images/complex_clean.png" alt="">
+                <p class="aboute__work_title general">Комплексная уборка от пола до потолка</p>
+            </div>
+            <div class="border"></div>
+            <div class="aboute_work__description_grp">
+                <img src="./assets/images/text_star.png" alt="star">
+                <p class="aboute_work__description">Качественная уборка лучшими средствами и техникой.</p>
+            </div>
+        </div>
+
+        <div class="aboute_work_manager">
+            <div class="aboute__work__manager__header">
+                <img class="aboute__img" src="./assets/images/manages_about.png" alt="">
+                <p class="aboute__work_title manager">Выезд менеджера на<br /> каждый объект </p>
+            </div>
+            <div class="border"></div>
+            <div class="aboute_work__description_grp">
+                <img src="./assets/images/text_star.png" alt="star">
+                <p class="aboute_work__description">Менеджер организует работу<br /> клинеров и сдает вам работу.
+                    Остается
+                    с
+                    вами на связи по всем вопросам.</p>
+            </div>
+        </div>
+
+        <div class="aboute_work_equip">
+            <div class="aboute__work__equip__header">
+                <img class="aboute__img" src="./assets/images/quip_about.png" alt="">
+                <p class="aboute__work_title equip">Привезем всю необходимую технику, инвентарь и средства.</p>
+            </div>
+            <div class="border"></div>
+            <div class="aboute_work__description_grp">
+                <img src="./assets/images/text_star.png" alt="star">
+                <p class="aboute_work__description">Все включено в стоимость.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="image-slider swiper">
+        <div class="image-slider__wrapper swiper-wrapper">
+            <div class="image-slider__slide swiper-slide">
+                <div class="image-slider__image">
+                    <img src="./assets/images/slide1.png" alt="">
+
+                </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+                <div class="image-slider__image">
+                    <img src="./assets/images/slide2.png" alt="">
+                </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+                <div class="image-slider__image">
+                    <img src="./assets/images/slide3.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+    <div class="works">
+        <div class="works__general">
+            <button data-modal-target="#works__general__modal" class="works__general__button">Общие работы весь
+                перечень</button>
+            <div class="works__general__modal" id="works__general__modal">
+                <div class="works__modal-header">
+                    <div class="works__modal-title">
+                        Общие работы весь список
+                    </div>
+                    <button data-close-button-general class="works__close-button">&times;</button>
+                </div>
+                <div class="works__modal-body">
+                    <ul>
+                        <li>обеспыливаем все внешние поверхности от пола до потолка;</li>
+                        <li>удаляем сложные загрязнения;</li>
+                        <li>обеспыливаем стены (по необходимости);</li>
+                        <li>обеспыливаем предметы интерьера квартиры;</li>
+                        <li>продуваем батареи паром;</li>
+                        <li>обеспыливаем и моем люстры, бра (сложные светильники из стекла, хрусталя или с большим
+                            количеством элементов не входят в стоимость);</li>
+                        <li>отодвигаем мебель и моем в труднодоступных местах;</li>
+                        <li>пылесосим мебель внутри(по возможности);</li>
+                        <li>пылесосим и моем полы;</li>
+                        <li>пылесосим ковры и под коврами, если это возможно;</li>
+                        <li>чистим вентиляционные решетки и кондиционеры (снаружи);</li>
+                        <li>моем трубы и карнизы;</li>
+                        <li>моем зеркала и стеклянные поверхности.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="works__bathroom">
+            <button data-modal-target="#works__bathroom__modal" class="works__general__button">Ванная комната весь
+                перечень</button>
+            <div class="works__bathroom__modal" id="works__bathroom__modal">
+                <div class="works__modal-header">
+                    <div class="works__modal-title">
+                        Ванная комната весь список
+                    </div>
+                    <button data-close-button-bathroom class="works__close-button">&times;</button>
+
+                </div>
+                <div class="works__modal-body">
+                    <ul>
+                        <li>чистим сантехнику и настенную плитку в ванной от пола до потолка;</li>
+                        <li>удаляем ржавчину и налет;</li>
+                        <li>удаляем плесень и грибок, дезинфицируем специальным составом (по возможности);</li>
+                        <li>моем и дезинфицируем ванну, душевую кабину, раковину, унитаз;</li>
+                        <li>моем под ванной, за стиральной и сушильной машиной(если возможно);</li>
+                        <li>дезинфицируем всю сантехнику.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="works__kitchen">
+            <button data-modal-target="#works__kitchen__modal" class="works__general__button">Кухня весь
+                перечень</button>
+            <div class="works__kitchen__modal" id="works__kitchen__modal">
+                <div class="works__modal-header">
+                    <div class="works__modal-title">
+                        Кухня весь список
+                    </div>
+                    <button data-close-button-kitchen class="works__close-button">&times;</button>
+
+                </div>
+                <div class="works__modal-body">
+                    <ul>
+                        <li>тщательно обезжириваем кухню, фартук, плиту и кухонную технику;</li>
+                        <li>обезжириваем технику снаружи специальными составами;</li>
+                        <li>моем посуду (до 20 минут);</li>
+                        <li>очищаем и дезинфицируем мусорную корзину;</li>
+                        <li>выносим мусор (до 2 пакетов);</li>
+                        <li>очищаем и дезинфицируем сантехнику;</li>
+                        <li>отодвигаем холодильник, плиту, если они не встроенные;</li>
+                        <li>пылесосим и моем за цоколем кухни;</li>
+                        <li>моем стол и стулья.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="additionally">
+
+        <div class="additionally__container">
+            <div class="additionally__header">
+                ДОПОЛНИТЕЛЬНО
+            </div>
+            <button data-modal-target="#additionaly__modal" class="additionally__button">
+                <p>Все дополнительные услуги</p>
+            </button>
+            <div class="additionaly__modal" id="additionaly__modal">
+                <div class="additionaly__modal__header">
+                    <div class="additionally__header-title">
+                        Дополнительные услуги весь список
+                    </div>
+                    <!-- <button data-close-button-additionally class="additionally__close__button">&times;</button> -->
+                </div>
+                <div class="additionaly__modal__body">
+                    <ul>
+                        <li>моем изнутри кухонные шкафы — 600 ₽/час;</li>
+                        <li>очищаем швы кафельной плитки парогенератором (рассчитывается индивидуально);</li>
+                        <li>делаем химчистку ковров и мягкой мебели;</li>
+                        <li>помоем окна (изнутри и снаружи при «+» температуре);</li>
+                        <li>вымоем духовку изнутри — 700 ₽;</li>
+                        <li>вымоем противень/решетку — от 50 ₽;</li>
+                        <li>вымоем холодильник изнутри — 600 ₽;</li>
+                        <li>вымоем холодильник с разморозкой морозильной камеры 900 ₽;</li>
+                        <li>вымоем микроволновую печь изнутри — 400 ₽;</li>
+                        <li>заменим постельное белье 150 ₽/комплект;</li>
+                        <li>гладим бельё — 600 ₽/час;</li>
+                        <li>вымоем потолок от 500 ₽;</li>
+                        <li>любые другие почасовые работы — 700 ₽/час;</li>
+                        <li>промоем стены (рассчитывается индивидуально);</li>
+                        <li>заберем и доставим ключи (рассчитывается индивидуально).</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div id="overlay"></div>
+            <div class="additionaly__animate">
+                <img data-aos="fade-up" class="Additional_services__animate_one"
+                    src="./assets/images/Additional_animate.png" alt="">
+                <img data-aos="fade-up" class="Additional_services__animate_two"
+                    src="./assets/images/Additional_animate2.png" alt="">
+                <img data-aos="fade-up" class="Additional_services__animate_three"
+                    src="./assets/images/Additional_animate3.png" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="info">
+            <div class="info__left">
+                <div class="info__footage">
+                    <h3 class="info__footage__header">КВ метры</h3>
+                    <p class="info__footage_count">ДО 30 м<sup>2</sup></p>
+                    <p class="info__footage_count">ДО 65 м<sup>2</sup></p>
+                    <p class="info__footage_count">ДО 100 м<sup>2</sup></p>
+                    <p class="info__footage_count">ОТ 100 м<sup>2</sup></p>
+                    <button>Получить консультацию</button>
+                </div>
+
+                <div class="info__price">
+                    <h3 class="info__price__header">Стоимость</h3>
+                    <p class="info__price__count">ОТ 8000 руб</p>
+                    <p class="info__price__count">ОТ 11000 руб</p>
+                    <p class="info__price__count">ОТ 15000 руб</p>
+                    <p class="info__price__count">ОТ 160 руб за м2</p>
+                </div>
+            </div>
+        <div class="info__cleaner">
+            <div class="info__cleaner__img"></div>
+            <!-- <img class="info__cleaner__img" src="./assets/images/text_star.png" alt=""> -->
+            <p class="info__cleaner__title">минимальная сумма заказа<br /> генеральной уборки квартиры:
+            </p>
+            <div class="info__cleaner__grp">
+                <div class="info__cleaner__count">
+                    <p>1 клинер</p>
+                    <p>2 клинера</p>
+                </div>
+
+                <div class="info__cleaner__price">
+                    <p>9000 руб</p>
+                    <p>11500 руб</p>
+                </div>
+            </div>
+
+            <div class="info__cleaner__description">
+                <p class="info__cleaner__description-text">Окончательная стоимость уборки расчитывается
+                    индивидуально</p>
+                <div class="info__cleaner__decription__img">
+                    <div class="info__cleaner__description-img"></div>
+                    <!-- <div class="info__cleaner__description-img__2"></div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="road">
+    <h1>Как проходит уборка</h1>
+    <div class="road__curve">
+        <div class="road__curve__icon">
+            <div class="road__curve__icon__order">
+                <div class="road__curve__icon__order__text__row">
+                    <div class="road__curve__icon__order__text__row__number"><p class="road__curve__icon__order__text__row__number__p">1</p></div>
+                    <p class="road__curve__icon__order__text__row__word">ОФОРМЛЕНИЕ<br/> ЗАКАЗА</p>
+                </div>
+                <img src="./assets/images/road/order.png">
+            </div>
+            <div class="road__curve__icon__order2">
+                <div class="road__curve__icon__order__text__column">
+                    <div class="road__curve__icon__order__text__row__number"><p class="road__curve__icon__order__text__row__number__p">2</p></div>
+                    <p class="road__curve__icon__order__text__row__word">КОНСУЛЬТАЦИЯ<br/> И РАСЧЕТ</p>
+
+                </div>
+                <img src="./assets/images/road/order_2.png">
+            </div>
+            <div class="road__curve__icon__order3">
+                <img src="./assets/images/road/order_3.png">
+                <div class="road__curve__icon__order__text__row "style="transform:translateX(-8.5vw)">
+                    <div class="road__curve__icon__order__text__row__number" style="padding-bottom: 40px;"><p class="road__curve__icon__order__text__row__number__p" >3</p></div>
+                    <p class="road__curve__icon__order__text__row__word">ФОРМИРУЕМ<br/> БРИГАДЫ <br/> КЛИНЕРОВ</p>
+                </div>
+            </div>
+            <div class="road__curve__icon__order4">
+                    <div class="road__curve__icon__order__text__row">
+                        <div class="road__curve__icon__order__text__row__number"><p class="road__curve__icon__order__text__row__number__p">4</p></div>
+                        <p class="road__curve__icon__order__text__row__word">ПРИЕЗЖАЕМ в<br/>НАЗНАЧЕННЫЙ<br/>ДЕНЬ И ВРЕМЯ</p>
+                    </div>
+                    <img src="./assets/images/road/order_41.png">
+            </div>
+            <div class="road__curve__icon__traffic">
+                <img src="./assets/images/road/traffic.png">
+                <span class="road__curve__icon__traffic__red"></span>
+                <span class="road__curve__icon__traffic__yellow"></span>
+                <span></span>
+            </div>
+            <div class="road__curve__icon__personal">
+                    <img src="./assets/images/road/personal.png">
+                    <div class="road__curve__icon__order__text__row">
+                        <div class="road__curve__icon__order__text__row__number"><p class="road__curve__icon__order__text__row__number__p">5</p></div>
+                        <p class="road__curve__icon__order__text__row__word">ВЫПОЛНЯЕМ<br/>УБОРКУ</p>
+                    </div>
+            </div>
+            <div class="road__curve__icon__phone">
+                <div class="road__curve__icon__order__text__column">
+                    <div class="road__curve__icon__order__text__row__number"><p class="road__curve__icon__order__text__row__number__p">6</p></div>
+                </div>
+                <img src="./assets/images/road/phone.png">
+            </div>
+            <div class="road__curve__icon__cash">
+                <div class="road__curve__icon__order__text__row">
+                    <div class="road__curve__icon__order__text__row__number"><p class="road__curve__icon__order__text__row__number__p">7</p></div>
+                    <p class="road__curve__icon__order__text__row__word">ОПЛАТА</p>
+                </div>
+                <img src="./assets/images/road/cash.png">
+            </div>
+        </div>
+        <div class="road__curve__background">
+            <div class="road__curve__background__img"></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <div class="table">
+        <img src="./assets/images/table.png" alt="">
+        <!-- <button>Скачать весь список</button> -->
+    </div>
+
+    <div class="equipment">
+        <div class="equipment__wraper">
+            <div class="equipment__container">
+                <div class="equipment__container__menu">
+                    <button class="equipment__container__menu-item menu-item-active">ПЫЛЕСОСЫ</button>
+                    <button class="equipment__container__menu-item">ХИМИЯ</button>
+                    <button class="equipment__container__menu-item">ПАРОГЕНЕРАТОРЫ</button>
+                    <button class="equipment__container__menu-item">ОБОРУДОВАНИЕ<br />ДЛЯ ХИМЧИСТКИ</button>
+                    <button class="equipment__container__menu-item">ДЕЗИНФЕКЦИЯ<br />ПОМЕЩЕНИЙ</button>
+                </div>
+                <div class="equipment__container__box__vacuum">
+                    <div class="equipment__container__box__vacuum__item">
+                        <div class="equipment__container__box__vacuum__item-titile">Karcher WD3</div>
+                        <img src="./assets/images/vacuum_cleaner1.png" alt="">
+                        <div class="equipment__container__box__vacuum__item-description">
+                            <p>Мощный пылесос для генеральной
+                                и
+                                послестроительной уборки</p>
+                        </div>
+                    </div>
+                    <div class="equipment__container__box__vacuum__item">
+                        <div class="equipment__container__box__vacuum__item-titile">Karcher NT 22</div>
+                        <img src="./assets/images/vacuum_cleaner2.png" alt="">
+                        <div class="equipment__container__box__vacuum__item-description">
+                            <p>Пылесос для послестроительной
+                                уборки</p>
+                        </div>
+                    </div>
+                    <div class="equipment__container__box__vacuum__item">
+                        <div class="equipment__container__box__vacuum__item-titile">Karcher NT 35</div>
+                        <img src="./assets/images/vacuum_cleaner3.png" alt="">
+                        <div class="equipment__container__box__vacuum__item-description">
+                            <p>Пылесос для больших послестроительных
+                                уборок и уборки после пожара</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="slider__wrapper-title">Переходи на чистую сторону!</div>
+
+ <div style="display: flex; flex-direction: row;max-height: 717px;"> -->
+    <div style="width: 625px; background:rgba(0, 145, 233, 0.19) ;font-size: 50px;">
+        Убираем<br/> налет в <br/>ванне
+    </div> 
+    <div class="sl-container">
+        <!-- картинка слева -->
+        <div class="view view-after">
+          <img src="./assets/images/slider/1.1.png"/>      
+        </div>
+        <!-- картинка справа -->
+        <div class="view view-before">
+          <img src="./assets/images/slider/1.png"/>
+        </div>
+        <!-- слайдер посередине -->
+        <div class="dragme">
+          <!-- кругляш на слайдере -->
+          <!-- <div class="dr-circle"></div> -->
+        </div>
+      </div>
+<!-- </div>    -->
+    <!-- <div class="slider-wrapper">
+        <div class="slider-container">
+            <div class="left-slide">
+                <div style="background-image: url(./assets/images/slider/1.png);">
+                </div>
+
+                <div style="background-image: url(./assets/images/slider/2.png);">
+                </div>
+
+                <div style="background-image: url(./assets/images/slider/3.png);">
+                </div>
+
+                <div style="background-image: url(./assets/images/slider/4.png);">
+                </div>
+
+            </div>
+            <div class="right-slide">
+                <div style="background-image: url(./assets/images/slider/4.4.png);"></div>
+                <div style="background-image: url(./assets/images/slider/3.3.png);"></div>
+                <div style="background-image: url(./assets/images/slider/2.2.png);"></div>
+                <div style="background-image: url(./assets/images/slider/1.1.png);"></div>
+            </div>
+            <!-- <div class="action-buttons">
+                <button class="down-button">
+                    <i class="fas fa-arrow-down"></i>
+                </button>
+                <button class="up-button">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+            </div> -->
+        </div>
+    </div> 
+
+
+    <div class="badge">
+        <div class="mini-badge" style="width:560px;height:800px;overflow:hidden;">
+            <iframe style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box"
+                src="https://yandex.ru/maps-reviews-widget/174251639843?comments">
+            </iframe>
+            <a href="https://yandex.ru/maps/org/chistaya_storona/174251639843/" target="_blank"
+                style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">Чистая
+                сторона на карте Санкт‑Петербурга — Яндекс Карты</a>
+        </div>
+    </div>
+
+
+
+
+    <div class="subfooter">
+        <div class="subfooter__faq">
+            <div class="subfooter__faq__group subfooter__faq__group-question">
+                <button class="subfooter__faq__group__btn subfooter__faq__btn-question">ВОПРОСЫ ПО ГЕНЕРАЛЬНОЙ УБОРКЕ</button>
+                <img src="./assets/images/subfooter/question.png">
+            </div>
+            <div class="subfooter__faq__group">
+                <button class="subfooter__faq__group__btn subfooter__faq__btn-call">ОБРАТНЫЙ ЗВОНОК</button>
+                <img src="./assets/images/subfooter/call.png">
+            </div>
+            <div class="subfooter__faq__group subfooter__faq__group-price">
+                <button class="subfooter__faq__group__btn subfooter__faq__btn-price">РАССЧИТАТЬ САМОСТОЯТЕЛЬНО</button>
+                <img src="./assets/images/subfooter/price.png">
+            </div>
+            <div class="subfooter__faq__group">
+                <button class="subfooter__faq__group__btn subfooter__faq__btn-next">ВЫБРАТЬ ДРУГУЮ УБОРКУ</button>
+                <img src="./assets/images/subfooter/next.png">
+            </div>
+        </div>
+        <div class="subfooter__form">
+            <h1 class="subfooter__form-title">Заказать генеральную<br /> уборку</h1>
+            <div class="subfooter__form__container">
+                <p>Имя</p>
+                <input type="text">
+                <p>Телефон или e-mail</p>
+                <input type="text">
+                <p>Описание заказа</p>
+                <input class="subfooter__form__container-cheklist" type="text">
+                <button>Заказать</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/bofore-after-slider.js"></script>
+    <script defer src="./js/modal.js"></script>
+    <script defer src="./js/additionalyModal.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="./js/bunner.js"></script>
+    
+    <!-- <script type="text/javascript">
+
+        $('.slider').slider();
+        
+        </script> -->
+    <!-- <script src="./js/jquery-3.6.3.min.js"></script>
+    <script src="./js/jquery.maskedinput.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(function($){
+            $(".form__number__entry").mask("+7 (999) 999-9999")
+
+        });
+        jQuery(function($){
+            $(".form__number__entry").val("+7 (");
+        });
+    </script> -->
+<script type="text/javascript">
+
+$('.slider').slider({initialPosition: .9});
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+.buttonsTop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5% 20% 5% 20%;
+    
+}
+
+.buttonTop{
+    padding: 0;
+    width: 265px;
+    height: 72px;
+    background: rgba(0, 145, 233, 0.16);
+    border-radius: 30px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 140%;  
+    color: #000000;
+
+}
+#buttonFirst{
+
+
+}
+ #buttonSecond{
+
+}
+#buttonThirst{
+
+} 
+.aboute_work {
+    max-width: 1920px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 90px;
+    overflow: hidden;
+    padding-bottom: 105px;
+
+}
+
+.aboute__img {
+    width: 437px;
+    height: 413px;
+}
+
+.aboute_work_complex {
+    display: flex;
+    flex-direction: column;
+    width: 554px;
+}
+
+.aboute_work_manager {
+    display: flex;
+    flex-direction: column;
+    max-width: 554px;
+
+}
+
+.aboute_work_equip {
+    display: flex;
+    flex-direction: column;
+    max-width: 557px;
+
+}
+
+.aboute_work_complex__header {
+    padding-left: 95px;
+}
+
+.aboute__work__manager__header {
+    padding-left: 112px;
+}
+
+.aboute__work__equip__header {
+    padding-left: 114px;
+}
+
+.aboute__work_title {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    color: #0091E9;
+}
+
+.aboute__work_title.general {
+    margin-bottom: 40px;
+}
+
+.aboute__work_title.manager {
+    margin-bottom: 40px;
+}
+
+.aboute__work_title.equip {
+    /* margin-bottom: 40px; */
+}
+
+
+.border {
+    margin-left: 45px;
+    margin-bottom: 24px;
+    width: 488px;
+    border: 2px solid #0091E9;
+}
+
+.aboute_work__description_grp {
+    display: flex;
+    flex-direction: row;
+}
+
+.aboute_work__description_grp img{
+    width: 60px;
+    height: 62px;
+}
+.aboute_work__description_grp p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.aboute_work__description {
+    padding-left: 37px;
+}

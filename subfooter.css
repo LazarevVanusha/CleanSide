@@ -1,0 +1,146 @@
+.subfooter {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.subfooter__faq {
+    /* background: url(./assets/images/faq_bg.png) no-repeat; */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./assets/images/faq_bg.png);
+    width: 977px;
+    height: 655px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+ .subfooter__faq__group__btn { /* .subfooter__faq__btn */
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.6);
+    border: 2px solid #0091E9;
+    backdrop-filter: blur(15.5px);
+    border-radius: 50px;
+    height: 76px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    color: #000000;
+
+}
+
+.subfooter__faq__btn-question {
+    /* margin-right: 220px; */
+    width: 638px;
+}
+
+.subfooter__faq__btn-call {
+    margin-left: 230px;
+    width: 426px;
+}
+
+.subfooter__faq__btn-price {
+    /* margin-right: 320px; */
+    width: 566px;
+}
+
+.subfooter__faq__btn-next {
+    width: 508px;
+    margin-left: 170px;
+
+
+}
+
+
+.subfooter__form {
+    background: rgba(0, 145, 233, 0.19);;
+    border-radius: 12px;
+    width: 943px;
+    height: 652px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subfooter__form-title {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: black;
+}
+
+.subfooter__form__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.subfooter__form__container p {
+    display: flex;
+    padding-left: 15px;
+    padding-bottom: 7px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #0091E9;
+}
+
+.subfooter__form__container input {
+    width: 426px;
+    height: 46px;
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid #FFFFFF;
+    border-radius: 50px;
+    margin-bottom: 36px;
+    box-shadow: none;
+    overflow: hidden;
+}
+
+.subfooter__form__container-cheklist {
+    height: 129px !important;
+    border-radius: 30px !important;
+
+}
+
+.subfooter__form__container button {
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    color: #000000;
+    width: 255px;
+    height: 67px;
+    background: #FFFFFF;
+    border: 2px solid #0091E9;
+    border-radius: 50px;
+}
+
+.subfooter__faq__group{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.subfooter__faq__group-question img{
+    margin-right: 220px;
+}
+.subfooter__faq__group-price img{
+    margin-right: 320px;
+}
