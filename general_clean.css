@@ -467,7 +467,7 @@ p.info__cleaner__description-text {
     .info {
         overflow: hidden;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
     .info__left{
        justify-content: center

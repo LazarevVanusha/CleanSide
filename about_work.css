@@ -37,15 +37,14 @@
     flex-direction: row;
     justify-content: center;
     gap: 60px;
-    margin-bottom: 90px;
     overflow: hidden;
     padding-bottom: 105px;
 
 }
 
 .aboute__img {
-    width: 437px;
-    height: 413px;
+    width: 337px;
+    height: 313px;
     padding-bottom: 47px;
 }
 .aboute__work__equip__header .aboute__img{
@@ -104,7 +103,7 @@
     font-family: 'Comfortaa';
     font-style: normal;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 140%;
     letter-spacing: 0.05em;
     color: #0091E9;
@@ -145,7 +144,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 140%;
     letter-spacing: 0.05em;
     color: #000000;
@@ -165,6 +164,9 @@
     }
 }
 @media (max-width:1512px) {
+    .aboute_work{
+        padding-bottom: 60px;
+    }
     .aboute__img {
       
         padding-bottom: 0px;
@@ -176,5 +178,8 @@
     .aboute__work_title.general{
         padding-left: 50px;
 
+    }
+    .border{
+        margin-bottom: 15px;
     }
 }
